@@ -3,6 +3,7 @@ mod backend;
 mod colour_submit;
 mod depth_range;
 mod draw;
+mod draw_canvas;
 mod exact_pipeline;
 mod floatz;
 mod geometry_diagnostic;

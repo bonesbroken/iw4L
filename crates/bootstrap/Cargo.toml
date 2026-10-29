@@ -29,6 +29,7 @@ assets.workspace = true
 audio.workspace = true
 console.workspace = true
 diag.workspace = true
+draw_mode.workspace = true
 frame.workspace = true
 master_protocol.workspace = true
 render.workspace = true

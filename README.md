@@ -69,6 +69,7 @@ This builds the optimized `play` profile and starts a local match with three bot
 - [Run guide](docs/RUN.md): console commands, classes and demo playback; [master setup](docs/MASTER.md) for playtests.
 - [Rendering](docs/RENDER.md) and [simulation](docs/SIM-STEP.md): inspect the engine's implementation.
 - [Map loading](docs/MAP-LOAD.md), [GSC runtime](docs/GSC-RUNTIME.md) and [bot AI](docs/BOTS.md): starting points for experiments and modifications.
+- [Draw mode](docs/DRAW.md): paint a picture on a world-space canvas with the console `draw` command.
 - [Documentation index](docs/INDEX.md), [contributing](CONTRIBUTING.md) and [security reports](SECURITY.md).
 
 This whole project is written by an LLM.

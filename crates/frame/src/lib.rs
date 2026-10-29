@@ -8,6 +8,7 @@ pub use screen_effects::{
     ScreenBlurRequest, ScreenEffectsDvars, ScreenEffectsPublished, ScreenEffectsView,
 };
 pub mod class_presets;
+pub mod draw_canvas;
 pub mod pad;
 pub mod retire;
 pub mod schedule;
@@ -18,6 +19,7 @@ pub mod settings;
 pub mod ui;
 
 pub use class_presets::{ClassPreset, pick_showcase, showcase_classes};
+pub use draw_canvas::{CanvasPixels, DrawCanvas};
 pub use pad::{ActivePad, ControllerIcon, InputDevices, TestControllerRumble};
 pub use retire::Retiring;
 pub use schedule::{
@@ -36,8 +38,8 @@ pub use session::{
     InstalledMatch, LaunchIdentity, LaunchReport, LifeEndCause, LifeEnded, LifeStartReason,
     LifeStarted, LocalLoadKey, LocalSpawnArmed, MapLoadApproved, MapLoadFailed, MatchKey,
     PresentationContext, ReadinessState, RuntimeRole, TeardownReason, UiCamera, UiDraw,
-    UiOverlayInput, UiPointerFree, ViewSubject, WorldGeneration, WorldProducts, WorldReadiness,
-    WorldStamp,
+    UiOverlayInput, UiPointerFree, ViewSubject, ViewmodelVisible, WorldGeneration, WorldProducts,
+    WorldReadiness, WorldStamp,
 };
 pub use settings::{DisplayResolution, GameSettings, OtherGame};
 pub use ui::{

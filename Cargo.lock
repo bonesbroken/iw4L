@@ -2192,6 +2192,7 @@ dependencies = [
  "bots",
  "console",
  "diag",
+ "draw_mode",
  "frame",
  "hud",
  "libc",
@@ -2838,6 +2839,20 @@ version = "0.1.0"
 dependencies = [
  "anim_iw4",
  "libm",
+]
+
+[[package]]
+name = "draw_mode"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+ "console",
+ "diag",
+ "frame",
+ "hud_iw4",
+ "png",
+ "render_scene",
+ "ui",
 ]
 
 [[package]]

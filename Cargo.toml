@@ -30,6 +30,7 @@ members = [
     "crates/d3d9_state",
     "crates/diag",
     "crates/dpvs_iw4",
+    "crates/draw_mode",
     "crates/entity_iw4",
     "crates/fastfile_iw4",
     "crates/fastfile_t5",
@@ -136,6 +137,7 @@ dxbc_sm5 = { path = "crates/dxbc_sm5" }
 d3d9_state = { path = "crates/d3d9_state" }
 diag = { path = "crates/diag" }
 dpvs_iw4 = { path = "crates/dpvs_iw4" }
+draw_mode = { path = "crates/draw_mode" }
 entity_iw4 = { path = "crates/entity_iw4" }
 fastfile_iw4 = { path = "crates/fastfile_iw4" }
 fastfile_t5 = { path = "crates/fastfile_t5" }

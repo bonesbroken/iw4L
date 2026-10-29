@@ -431,6 +431,7 @@ fn fpv_occupy_submission(
 
 pub fn occupy_fpv_scene(
     mut submissions: MessageWriter<AnimDObjSceneSubmission>,
+    viewmodel_visible: Option<Res<frame::ViewmodelVisible>>,
     presented: Res<PresentedSnapshot>,
     local: Res<LocalPresentClient>,
     view_settings: (Res<ViewSubject>, Res<frame::GameSettings>),
@@ -442,6 +443,9 @@ pub fn occupy_fpv_scene(
 ) {
     let (view, settings) = view_settings;
     let fpv_meshes = owners.meshes.as_ref();
+    if viewmodel_visible.as_ref().is_some_and(|visible| !visible.0) {
+        return;
+    }
     if presented.viewweapon_player(local.0).is_none()
         || presented_is_third_person(
             &presented,

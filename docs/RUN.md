@@ -23,6 +23,9 @@ in the background. Opening Classes before it is ready shows Loading Classes;
 Escape returns to the menu, and readiness opens the editor for unlocked accounts. In `--cmds`,
 `wait progression` holds until then.
 
+**Draw mode.** `draw` opens a world-space paint canvas with the pointer free;
+[`DRAW.md`](DRAW.md) lists the tools, palette, undo and scripted strokes.
+
 **Cheats are on by default.** The host accepts the debug
 actions: `move`, `look`, `tp`, `nudge`, `god`, `kill`, `damage`, `force_spawn`,
 `force_match_start`, `rotatevelocity` and the `give` supply commands. `--no-cheats`

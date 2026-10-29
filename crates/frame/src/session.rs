@@ -60,6 +60,17 @@ impl Default for HudDraw {
     }
 }
 
+/// The first-person weapon and hands. Hidden while the draw canvas is open so
+/// the full board is visible; restore the previous value when it closes.
+#[derive(Resource, Debug, Clone, Copy)]
+pub struct ViewmodelVisible(pub bool);
+
+impl Default for ViewmodelVisible {
+    fn default() -> Self {
+        Self(true)
+    }
+}
+
 #[derive(Resource, Clone, Debug, Default)]
 pub struct LaunchIdentity {
     pub role_label: String,
